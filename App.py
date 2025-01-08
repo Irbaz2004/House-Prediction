@@ -77,7 +77,7 @@ if st.session_state.page == "Home":
     cols = st.columns(len(filtered_houses))
     for i, col in enumerate(cols):
         with col:
-            st.image(house_images[i], use_column_width=True)
+            st.image(house_images[i], use_container_width=True)
             st.subheader(filtered_houses[i]["name"])
             st.write(f"Area: {filtered_houses[i]['area']} sq.ft")
             st.write(f"Price: ₹ {filtered_houses[i]['price']:,}")
